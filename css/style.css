@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-image: url(../img/bg.png);
+
+    
+
+}
+.coracao{
+    animation: float 2s ease-in-out infinite;
+
+    max-width: 300px;
+
+    
+}
+
+a{
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	background-image: url(../img/bgp.png);
+	background-size: contain;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+	
+}
+
+a:hover{
+	transform: scale(1.2);
+	filter: brightness(1.5);
+}
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
